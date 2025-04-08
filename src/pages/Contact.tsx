@@ -1,6 +1,6 @@
-
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { Mail, Phone, MapPin, Clock, Send } from 'lucide-react';
@@ -19,7 +19,6 @@ import {
 import { Input } from '@/components/ui/input';
 import { Card, CardContent } from '@/components/ui/card';
 
-// Define form validation schema
 const formSchema = z.object({
   name: z.string().min(2, { message: 'Name must be at least 2 characters' }),
   email: z.string().email({ message: 'Please enter a valid email address' }),
@@ -33,7 +32,6 @@ const Contact = () => {
   const navigate = useNavigate();
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  // Initialize form
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -44,20 +42,16 @@ const Contact = () => {
     },
   });
 
-  // Handle form submission
   const onSubmit = (data: FormValues) => {
     setIsSubmitting(true);
     
-    // Simulate form submission with a timeout
     setTimeout(() => {
       console.log('Form submitted:', data);
       
-      // Show success message
       toast.success('Message sent successfully!', {
         description: "We'll get back to you as soon as possible.",
       });
       
-      // Reset form
       form.reset();
       setIsSubmitting(false);
     }, 1000);
@@ -65,16 +59,21 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen bg-cream-light">
+      <Helmet>
+        <title>Contact Jewels by Indra | Jewelry Inquiries</title>
+        <meta name="description" content="Get in touch with Jewels by Indra. Contact us for questions about our handcrafted jewelry collection, custom orders, or customer support." />
+        <meta name="keywords" content="contact Jewels by Indra, jewelry inquiries, custom jewelry, jewelry support" />
+      </Helmet>
+      
       <Navbar />
       
       <div className="container-custom py-12 md:py-20">
-        <h1 className="font-serif text-center mb-6">Contact Us</h1>
+        <h1 className="font-serif text-center mb-6">Contact Jewels by Indra</h1>
         <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-12">
           Have questions about our jewelry, your order, or need assistance? We're here to help! Reach out to us using the form below or through any of our contact channels.
         </p>
         
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
-          {/* Contact Information */}
           <div className="space-y-6">
             <h2 className="font-serif text-2xl">Get In Touch</h2>
             
@@ -152,7 +151,6 @@ const Contact = () => {
             </div>
           </div>
           
-          {/* Contact Form */}
           <div className="lg:col-span-2">
             <div className="bg-white p-6 md:p-8 rounded-lg shadow-sm">
               <h2 className="font-serif text-2xl mb-6">Send Us a Message</h2>

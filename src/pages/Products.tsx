@@ -1,8 +1,8 @@
-
 import { useState } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import ProductCard from '../components/ProductCard';
+import { Helmet } from 'react-helmet-async';
 
 // Mock products data
 const allProducts = [
@@ -12,7 +12,7 @@ const allProducts = [
     price: 249.99,
     image: "https://images.unsplash.com/photo-1599643477877-530eb83abc8e?auto=format&fit=crop&w=800&q=80",
     category: "necklaces",
-    description: "A stunning crescent moon pendant crafted in 18k gold with delicate detailing."
+    description: "A stunning crescent moon pendant crafted in 18k gold with delicate detailing. Indra's signature piece that complements any outfit."
   },
   {
     id: "2",
@@ -20,7 +20,7 @@ const allProducts = [
     price: 189.99,
     image: "https://images.unsplash.com/photo-1608050072142-ade9265d4cc5?auto=format&fit=crop&w=800&q=80",
     category: "earrings",
-    description: "Elegant freshwater pearl earrings set in sterling silver, perfect for every occasion."
+    description: "Elegant freshwater pearl earrings set in sterling silver by Indra, perfect for every occasion and daily wear."
   },
   {
     id: "3",
@@ -28,7 +28,7 @@ const allProducts = [
     price: 349.99,
     image: "https://images.unsplash.com/photo-1611085583191-a3b181a88401?auto=format&fit=crop&w=800&q=80",
     category: "rings",
-    description: "A celestial-inspired ring featuring ethically sourced diamonds set in 14k gold."
+    description: "A celestial-inspired ring featuring ethically sourced diamonds set in 14k gold. Indra's artisanal craftsmanship shines in this piece."
   },
   {
     id: "4",
@@ -36,7 +36,7 @@ const allProducts = [
     price: 299.99,
     image: "https://images.unsplash.com/photo-1611160027134-324981b5ebc4?auto=format&fit=crop&w=800&q=80",
     category: "bracelets",
-    description: "An elegant bracelet featuring a continuous line of blue sapphires in a delicate gold setting."
+    description: "An elegant bracelet featuring a continuous line of blue sapphires in a delicate gold setting. Handcrafted by Indra with attention to detail."
   },
   {
     id: "5",
@@ -112,14 +112,20 @@ const Products = () => {
 
   return (
     <div className="min-h-screen bg-cream-light">
+      <Helmet>
+        <title>Jewelry Collection | Jewels by Indra</title>
+        <meta name="description" content="Browse Jewels by Indra's handcrafted jewelry collection. Necklaces, earrings, rings, and bracelets crafted with ethically sourced materials." />
+        <meta name="keywords" content="jewelry collection, Indra jewelry, handcrafted jewels, necklaces, earrings, rings, bracelets" />
+      </Helmet>
+      
       <Navbar />
       
       {/* Header */}
       <div className="bg-cream py-16">
         <div className="container-custom text-center">
-          <h1 className="font-serif mb-4">Our Collection</h1>
+          <h1 className="font-serif mb-4">Jewels by Indra Collection</h1>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Discover our handcrafted jewelry pieces, thoughtfully designed to elevate your everyday style and special moments.
+            Discover our handcrafted jewelry pieces, thoughtfully designed to elevate your everyday style and special moments. Each piece is created with intention by Indra.
           </p>
         </div>
       </div>
