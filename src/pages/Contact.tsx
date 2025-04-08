@@ -86,8 +86,8 @@ const Contact = () => {
                     <div>
                       <h3 className="font-medium">Email Us</h3>
                       <p className="text-sm text-muted-foreground mb-1">For general inquiries:</p>
-                      <a href="mailto:hello@jewelsby.indra.com" className="text-gold hover:text-gold-dark">
-                        hello@jewelsby.indra.com
+                      <a href="mailto:indrajosephine7@gmail.com" className="text-gold hover:text-gold-dark">
+                        indrajosephine7@gmail.com
                       </a>
                     </div>
                   </div>
@@ -101,8 +101,8 @@ const Contact = () => {
                     <div>
                       <h3 className="font-medium">Call Us</h3>
                       <p className="text-sm text-muted-foreground mb-1">Monday-Friday, 9am-5pm EST:</p>
-                      <a href="tel:+18001234567" className="text-gold hover:text-gold-dark">
-                        +1 (800) 123-4567
+                      <a href="tel:+0748057641" className="text-gold hover:text-gold-dark">
+                        0748057641
                       </a>
                     </div>
                   </div>
@@ -145,7 +145,7 @@ const Contact = () => {
             <div className="pt-4">
               <h3 className="font-serif text-lg mb-2">Follow Us</h3>
               <div className="flex space-x-4">
-                <a href="#" className="text-muted-foreground hover:text-gold transition-colors">Instagram</a>
+                <a href="https://www.instagram.com/belle.amm_e" className="text-muted-foreground hover:text-gold transition-colors">Instagram</a>
                 <a href="#" className="text-muted-foreground hover:text-gold transition-colors">Pinterest</a>
                 <a href="#" className="text-muted-foreground hover:text-gold transition-colors">Facebook</a>
               </div>
