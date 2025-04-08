@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Product } from '../context/CartContext';
 import { useCart } from '../context/CartContext';
 import { ShoppingBag } from 'lucide-react';
+import { AspectRatio } from './ui/aspect-ratio';
 
 interface ProductCardProps {
   product: Product;

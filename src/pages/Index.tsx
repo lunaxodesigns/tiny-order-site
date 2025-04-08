@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -11,7 +10,7 @@ const featuredProducts = [
     id: "1",
     name: "Gold Lunar Pendant",
     price: 249.99,
-    image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1599643477877-530eb83abc8e?auto=format&fit=crop&w=800&q=80",
     category: "necklaces",
     description: "A stunning crescent moon pendant crafted in 18k gold with delicate detailing."
   },
@@ -19,7 +18,7 @@ const featuredProducts = [
     id: "2",
     name: "Pearl Drop Earrings",
     price: 189.99,
-    image: "https://images.unsplash.com/photo-1582562124811-c09040d0a901?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1608050072142-ade9265d4cc5?auto=format&fit=crop&w=800&q=80",
     category: "earrings",
     description: "Elegant freshwater pearl earrings set in sterling silver, perfect for every occasion."
   },
@@ -27,7 +26,7 @@ const featuredProducts = [
     id: "3",
     name: "Diamond Constellation Ring",
     price: 349.99,
-    image: "https://images.unsplash.com/photo-1599643477877-530eb83abc8e?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1611085583191-a3b181a88401?auto=format&fit=crop&w=800&q=80",
     category: "rings",
     description: "A celestial-inspired ring featuring ethically sourced diamonds set in 14k gold."
   },
@@ -35,7 +34,7 @@ const featuredProducts = [
     id: "4",
     name: "Sapphire Tennis Bracelet",
     price: 299.99,
-    image: "https://images.unsplash.com/photo-1603561596142-501172dded88?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1611160027134-324981b5ebc4?auto=format&fit=crop&w=800&q=80",
     category: "bracelets",
     description: "An elegant bracelet featuring a continuous line of blue sapphires in a delicate gold setting."
   },
@@ -52,13 +51,13 @@ const collections = [
   {
     id: "earrings",
     name: "Earrings",
-    image: "https://images.unsplash.com/photo-1630019852942-f89202989a59?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=80",
     description: "From studs to drops, find your perfect match"
   },
   {
     id: "rings",
     name: "Rings",
-    image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1589674781759-c21c37956a44?auto=format&fit=crop&w=800&q=80",
     description: "Symbols of elegance for every occasion"
   },
   {
@@ -78,8 +77,8 @@ const Index = () => {
       <section className="relative h-[80vh] overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1616097970275-1e187b4ce59f?auto=format&fit=crop&w=2000&q=80"
-            alt="Jewelry collection"
+            src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?auto=format&fit=crop&w=2000&q=80"
+            alt="Luxury jewelry collection"
             className="object-cover w-full h-full opacity-90"
           />
           <div className="absolute inset-0 bg-black bg-opacity-20" />
@@ -169,7 +168,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1721322800607-8c38375eef04?auto=format&fit=crop&w=800&q=80" 
+                src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=800&q=80" 
                 alt="Jewelry crafting" 
                 className="rounded-lg shadow-md"
               />
@@ -191,18 +190,25 @@ const Index = () => {
       <section className="py-20 container-custom">
         <h2 className="font-serif text-center mb-16">Follow Our Journey</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
-          {Array.from({ length: 6 }).map((_, idx) => (
+          {[
+            "https://images.unsplash.com/photo-1611085583191-a3b181a88401?auto=format&fit=crop&w=400&q=80",
+            "https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=400&q=80",
+            "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=400&q=80",
+            "https://images.unsplash.com/photo-1608050072142-ade9265d4cc5?auto=format&fit=crop&w=400&q=80",
+            "https://images.unsplash.com/photo-1611160027134-324981b5ebc4?auto=format&fit=crop&w=400&q=80",
+            "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=400&q=80"
+          ].map((src, idx) => (
             <a href="#" key={idx} className="block aspect-square overflow-hidden rounded-md">
               <img 
-                src={`https://images.unsplash.com/photo-${1600000000000 + idx * 1000}?auto=format&fit=crop&w=400&q=80`} 
-                alt="Instagram post" 
+                src={src} 
+                alt={`Instagram post ${idx + 1}`} 
                 className="object-cover w-full h-full hover:scale-110 transition-transform duration-500"
               />
             </a>
           ))}
         </div>
         <div className="text-center mt-10">
-          <a href="#" className="text-gold hover:text-gold-dark inline-flex items-center">
+          <a href="https://www.instagram.com/belle.amm_e" className="text-gold hover:text-gold-dark inline-flex items-center">
             @jewelsbyindra <ArrowRight size={16} className="ml-2" />
           </a>
         </div>

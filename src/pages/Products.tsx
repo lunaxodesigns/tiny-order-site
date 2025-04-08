@@ -10,7 +10,7 @@ const allProducts = [
     id: "1",
     name: "Gold Lunar Pendant",
     price: 249.99,
-    image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1599643477877-530eb83abc8e?auto=format&fit=crop&w=800&q=80",
     category: "necklaces",
     description: "A stunning crescent moon pendant crafted in 18k gold with delicate detailing."
   },
@@ -18,7 +18,7 @@ const allProducts = [
     id: "2",
     name: "Pearl Drop Earrings",
     price: 189.99,
-    image: "https://images.unsplash.com/photo-1582562124811-c09040d0a901?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1608050072142-ade9265d4cc5?auto=format&fit=crop&w=800&q=80",
     category: "earrings",
     description: "Elegant freshwater pearl earrings set in sterling silver, perfect for every occasion."
   },
@@ -26,7 +26,7 @@ const allProducts = [
     id: "3",
     name: "Diamond Constellation Ring",
     price: 349.99,
-    image: "https://images.unsplash.com/photo-1599643477877-530eb83abc8e?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1611085583191-a3b181a88401?auto=format&fit=crop&w=800&q=80",
     category: "rings",
     description: "A celestial-inspired ring featuring ethically sourced diamonds set in 14k gold."
   },
@@ -34,7 +34,7 @@ const allProducts = [
     id: "4",
     name: "Sapphire Tennis Bracelet",
     price: 299.99,
-    image: "https://images.unsplash.com/photo-1603561596142-501172dded88?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1611160027134-324981b5ebc4?auto=format&fit=crop&w=800&q=80",
     category: "bracelets",
     description: "An elegant bracelet featuring a continuous line of blue sapphires in a delicate gold setting."
   },
@@ -42,7 +42,7 @@ const allProducts = [
     id: "5",
     name: "Emerald Stud Earrings",
     price: 279.99,
-    image: "https://images.unsplash.com/photo-1586878341524-7c93a915283e?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1635767798638-3e7e63a8ef5a?auto=format&fit=crop&w=800&q=80",
     category: "earrings",
     description: "Classic emerald studs set in 14k gold, perfect for everyday elegance."
   },
@@ -50,7 +50,7 @@ const allProducts = [
     id: "6",
     name: "Twisted Gold Bangle",
     price: 219.99,
-    image: "https://images.unsplash.com/photo-1608050072142-ade9265d4cc5?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1618403088890-3d9ff6f4c8b1?auto=format&fit=crop&w=800&q=80",
     category: "bracelets",
     description: "A modern bangle with a distinctive twisted design in polished 18k gold."
   },
@@ -58,7 +58,7 @@ const allProducts = [
     id: "7",
     name: "Opal Statement Necklace",
     price: 319.99,
-    image: "https://images.unsplash.com/photo-1551836022-aadb801c60e9?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=800&q=80",
     category: "necklaces",
     description: "A striking statement necklace featuring Australian opals set in sterling silver."
   },
@@ -66,7 +66,7 @@ const allProducts = [
     id: "8",
     name: "Rose Gold Twist Ring",
     price: 199.99,
-    image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1589674781759-c21c37956a44?auto=format&fit=crop&w=800&q=80",
     category: "rings",
     description: "An elegant twisted band in warm rose gold, the perfect everyday ring."
   },
