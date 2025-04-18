@@ -9,6 +9,8 @@ import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
 import OrderTracking from './pages/OrderTracking';
 import Contact from './pages/Contact';
+import About from './pages/About';
+import Comments from './pages/Comments';
 import NotFound from './pages/NotFound';
 import { Toaster } from './components/ui/sonner';
 import { CartProvider } from './context/CartContext';
@@ -26,6 +28,8 @@ function App() {
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/order-tracking" element={<OrderTracking />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/comments" element={<Comments />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
           <Toaster />

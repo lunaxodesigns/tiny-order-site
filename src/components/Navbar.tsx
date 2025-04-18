@@ -35,8 +35,8 @@ const Navbar = () => {
         <div className="hidden md:flex space-x-8">
           <Link to="/" className="text-foreground hover:text-gold transition-colors">Home</Link>
           <Link to="/products" className="text-foreground hover:text-gold transition-colors">Shop</Link>
-          <Link to="/collections" className="text-foreground hover:text-gold transition-colors">Collections</Link>
           <Link to="/about" className="text-foreground hover:text-gold transition-colors">About</Link>
+          <Link to="/comments" className="text-foreground hover:text-gold transition-colors">Reviews</Link>
           <Link to="/contact" className="text-foreground hover:text-gold transition-colors">Contact</Link>
         </div>
 
@@ -59,8 +59,8 @@ const Navbar = () => {
           <div className="flex flex-col py-4 space-y-4 px-6">
             <Link to="/" className="text-foreground hover:text-gold transition-colors" onClick={toggleMenu}>Home</Link>
             <Link to="/products" className="text-foreground hover:text-gold transition-colors" onClick={toggleMenu}>Shop</Link>
-            <Link to="/collections" className="text-foreground hover:text-gold transition-colors" onClick={toggleMenu}>Collections</Link>
             <Link to="/about" className="text-foreground hover:text-gold transition-colors" onClick={toggleMenu}>About</Link>
+            <Link to="/comments" className="text-foreground hover:text-gold transition-colors" onClick={toggleMenu}>Reviews</Link>
             <Link to="/contact" className="text-foreground hover:text-gold transition-colors" onClick={toggleMenu}>Contact</Link>
           </div>
         </div>
