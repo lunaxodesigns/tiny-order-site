@@ -60,9 +60,9 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-cream-light">
       <Helmet>
-        <title>Contact Jewels by Indra | Jewelry Inquiries</title>
-        <meta name="description" content="Get in touch with Jewels by Indra. Contact us for questions about our handcrafted jewelry collection, custom orders, or customer support." />
-        <meta name="keywords" content="contact Jewels by Indra, jewelry inquiries, custom jewelry, jewelry support" />
+        <title>Contact Jewels by Indra | Jewelry Inquiries in Nairobi</title>
+        <meta name="description" content="Get in touch with Jewels by Indra in Nairobi. Contact us for questions about our handcrafted jewelry collection, custom orders, or customer support at The Alchemist, Westlands." />
+        <meta name="keywords" content="contact Jewels by Indra, jewelry inquiries Nairobi, custom jewelry Kenya, The Alchemist Westlands" />
       </Helmet>
       
       <Navbar />
@@ -115,9 +115,9 @@ const Contact = () => {
                     <div>
                       <h3 className="font-medium">Visit Our Studio</h3>
                       <p className="text-sm text-muted-foreground">
-                        123 Artisan Avenue<br />
-                        New York, NY 10001<br />
-                        United States
+                        The Alchemist<br />
+                        Westlands<br />
+                        Nairobi, Kenya
                       </p>
                     </div>
                   </div>
