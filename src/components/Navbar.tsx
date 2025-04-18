@@ -25,9 +25,16 @@ const Navbar = () => {
         </div>
 
         {/* Brand logo */}
-        <div className="flex-1 md:flex-none text-center md:text-left">
-          <Link to="/" className="font-serif text-2xl font-semibold tracking-wider text-foreground">
-            Jewels by Indra
+        <div className="flex-1 md:flex-none text-center md:text-left flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-3">
+            <img 
+              src="/lovable-uploads/88394157-eb99-4eb9-9c52-ce3c64c30d5d.png" 
+              alt="Jewels by Indra Logo" 
+              className="h-12 w-12 object-contain"
+            />
+            <span className="font-serif text-2xl font-semibold tracking-wider text-foreground">
+              Jewels by Indra
+            </span>
           </Link>
         </div>
 
